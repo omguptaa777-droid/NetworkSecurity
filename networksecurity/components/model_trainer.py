@@ -107,8 +107,6 @@ class ModelTrainer:
 
         self.track_mlflow(best_model,classification_test_metric)
 
-        
-
         preprocessor = load_object(file_path=self.data_transformation_artifact.transformed_object_file_path)
             
         model_dir_path = os.path.dirname(self.model_trainer_config.trained_model_file_path)
